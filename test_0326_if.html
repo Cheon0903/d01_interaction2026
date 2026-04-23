@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // if조건문
+        // if(273 < 100) {
+        //     alert('273 < 100 => true')
+        // }
+        // // 프로그램 종료
+        // alert('종료')
+
+        // const date = new Date();
+        // // console.log(date.getFullYear())
+        // const hour = date.getHours()
+        // if (hour < 11) {
+        //     alert('아침 먹을 시간입니다')
+        // } else if (hour < 15) {
+        //     alert('점심 먹을 시간입니다')
+        // } else {
+
+        //     alert('저녁 먹을 시간입니다')
+        // }
+
+        // const x = prompt('조건에 맞는 숫자를 입력하세요')
+        // if(x > 10) {
+        //     if(x < 20) {
+        //         console.log('조건에 맞습니다.')
+        //     }
+        // }
+
+        // const a = Number(prompt('숫자를 입력하세요'))
+        // if( a > 0) {
+        //     alert(`${a}는 양수입니다.`)
+        // } else if (a === 0) {
+        //     alert(`${a}는 0입니다.`)
+        // } else {
+        //     alert(`${a}는 음수입니다.`)
+        // }
+        
+        // const b = Number(prompt('숫자를 입력하세요'))
+        // if( b % 2 === 0) {
+        //     alert(`${b}는 짝수입니다.`)
+        // } else {
+        //     alert(`${b}는 홀수입니다.`)
+        // }
+        'use strict'
+        const 입력 = prompt('정수를 입력하세요', '')
+        const 끝자리 = 입력[입력.length - 1]
+
+        if (끝자리 === '0' || 
+            끝자리 === '2' || 
+            끝자리 === '4' || 
+            끝자리 === '6' || 
+            끝자리 === '8') {
+            alert(`${입력}는 짝수입니다.`)
+        } else {
+            alert(`${입력}는 홀수입니다.`)
+        }
+
+    </script>
+</body>
+</html>
